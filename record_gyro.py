@@ -51,9 +51,12 @@ with open("mpu_data.csv", "a") as myfile:
 
 
 status_led = LED(15)
-
+print "reading mpu data"
 while True:
-    status_led.on()
+    if int(time.time()*2)%2 == 0:
+        status_led.off()
+    else:
+	status_led.on()
     gyro_xout = read_word_2c(0x43) / 131.0
     gyro_yout = read_word_2c(0x45) / 131.0
     gyro_zout = read_word_2c(0x47) / 131.0
@@ -73,7 +76,3 @@ while True:
     with open("mpu_data.csv", "a") as myfile:
         myfile.write(dataline)
 
-
-    #might remove or shorten
-    status_led.off()
-    time.sleep(0.5)
