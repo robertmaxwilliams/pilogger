@@ -8,8 +8,8 @@ Left side | right side
 ○ ○ 3-SDA  |   4 - empty 5v
 ○ ○ 5-SCL   |  6 - ground to regulator
 ○ ○ 7       |  8 - GPO 14 (disable jumper)
-○ ○ 9-ground | 10 GPO 15 - accel reading light, green wire
-○ ○ 11      |  12 GPO 18 camera light
+○ ○ 9-ground | 10 GPO 15 - accel reading light, green wire, yellow LED
+○ ○ 11      |  12 GPO 18 running light, yellow wire, purple LED
 ○ ○ 13     |   14 Ground
 ○ ○ 15 .    |  16 GPO 23
 ○ ○ 17 .     | 18 GPO 24
