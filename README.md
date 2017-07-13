@@ -25,3 +25,14 @@ ground for MPU |9  ○ ○ 10|GPIO 15: accel reading light, green wire, yellow L
  .|37 ○ ○ 38| 
  .|39 ○ ○ 40| 
 
+#power draw test
+Very rough approximation, sorry for not doing this in amps
+Start from boot: 8.27v
+at 8 mins : 8.12 v
+at 12 . in: 8.08 v
+
+time period 1: 0.01875 v/min
+time period 2: 0.0100  v/min
+
+empty is 7 volts, full is 8.4
+1.4 volts/(0.15 v/min) = 93.3 minutes
